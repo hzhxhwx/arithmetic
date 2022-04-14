@@ -3,7 +3,7 @@ package com.hzh.class04;
 /**
  * 逆序对,左边的数比右边的数小,有多少对
  */
-public class Code03_ReversePair {
+public class Code03_ReversePair_01 {
 
 	public static int reverPairNumber(int[] arr) {
 		if (arr == null || arr.length < 2) {
