@@ -49,7 +49,6 @@ public class Code01_ReverseList_mine {
     }
 
     /**
-     *
      * @param head
      * @return
      */
@@ -57,11 +56,17 @@ public class Code01_ReverseList_mine {
         DoubleNode pre = null;
         DoubleNode next = null;
         while (head != null) {
+            //记录head的下一个指针
             next = head.next;
-            head.next = pre;
+            //将head的next指向pre
+            pre = head.next;
+            //将head的last指向head的next
             head.last = next;
+            //pre前移
             pre = head;
+            //head的后移
             head = next;
+
         }
         return pre;
     }
